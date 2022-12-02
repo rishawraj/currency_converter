@@ -1,29 +1,36 @@
 body {
-  background-color: lightblue;
   margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   text-align: center;
+  background-color: black;
+}
+.container {
+  color: white;
 }
 
 h1 {
   margin: 0;
   margin-bottom: 0.5rem;
+  font-size: 40px;
+  font-family: monospace;
 }
 
 .input {
   border: 1px solid #333;
   border-radius: 0.3rem;
-  width: 7em;
+  padding: 5px 10px;
+  font-family: "Courier New", Courier, monospace;
 }
 
 select {
   margin-left: 0.5rem;
+  padding: 5px;
 }
 
 .equals {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.8rem;
 }

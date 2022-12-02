@@ -11,7 +11,6 @@ const App = () => {
   const [amount, setAmount] = useState(1);
   const [exchangeRate, setExchangeRate] = useState();
   const [amountInFromCurrency, setAmountInFromCurrency] = useState(true);
-  // console.log({ exchangeRate });
 
   let toAmount, fromAmount;
   if (amountInFromCurrency) {
@@ -55,7 +54,7 @@ const App = () => {
   }
 
   return (
-    <>
+    <div className="container">
       <h1>Convert</h1>
       <CurrencyRow
         currencyOptions={currencyOptions}
@@ -72,7 +71,7 @@ const App = () => {
         onChangeAmount={handleToAmountChange}
         amount={toAmount}
       />
-    </>
+    </div>
   );
 };
 
